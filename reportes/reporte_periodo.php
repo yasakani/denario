@@ -21,6 +21,10 @@ function color_over(fila){ fila.style.backgroundColor="#BDD5FF"}
 function color_out(fila){ fila.style.backgroundColor=""}
 </script>
 <?php
+
+setlocale(LC_TIME, 'es_MX.UTF-8');
+setlocale(LC_MONETARY, 'es_MX.UTF-8');
+
 //Obtener valores del Formulario
 $anio_inicial = $_POST['año_inicial']; 
 $mes_inicial = $_POST['mes_inicial'];
@@ -50,6 +54,10 @@ date_default_timezone_set('America/Mexico_City');
 // Asigna valores a las Variables de Fecha/Hora
 $fecha_dia=date("Y-m-d");
 $fecha_hora=date("H:i:s");
+
+$fecha_inicial_display = ucwords(strftime('%d %B %Y', strtotime($fecha_inicial)));
+$fecha_final_display = ucwords(strftime('%d %B %Y', strtotime($fecha_final)));
+
 ?>
 </head>
 
@@ -95,7 +103,7 @@ $fecha_hora=date("H:i:s");
           <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
             <tr>
               <td align="center"><span class="font-title-secciones">Reporte del Periodo</span><br />
-                <span class="font-stats-grey"><?php echo $fecha_inicial ." <span class='font-stats-grey-low'>al</span> ". $fecha_final; ?></span><br/>
+                <span class="font-stats-grey"><?php echo $fecha_inicial_display ." <span class='font-stats-grey-low'>al</span> ". $fecha_final_display; ?></span><br/>
                 Reporte Generado el <?php echo $fecha_dia; ?> a las <?php echo $fecha_hora; ?> hrs.</td>
             </tr>
           </table>
@@ -112,11 +120,12 @@ $fecha_hora=date("H:i:s");
           <table width="750" border="0" align="center" cellpadding="0" cellspacing="0">
             <tr>
               <td align="center"><span class="font-details">Ingreso del Periodo</span><span class="font-stats-green"><br />
-                $<?php
+                <?php
              $recaudacion_dia=mysql_query("SELECT SUM(total) AS total FROM tm_ticket WHERE fecha BETWEEN '$fecha_inicial' AND '$fecha_final'");
 			 $fila=mysql_fetch_array($recaudacion_dia, MYSQL_ASSOC);
-			 echo $fila["total"];
-			 ?>.00 m.n.</span></td>
+			 settype($fila['total'],  "integer");
+			 echo money_format('%i', $fila["total"]);?>
+			 </span></td>
             </tr>
 </table>
           <br />
