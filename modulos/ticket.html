@@ -1,0 +1,104 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Denario : Ticket</title>
+<link rel="stylesheet" href="../css/css.css" type="text/css">
+</head>
+
+<body>
+
+<div id="ticket" name="ticket">
+<table width="300" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" class="font-grande">'.$nombre_empresa.'</td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">'.$direccion.', '.$colonia.', Cuautitlán Izcalli, Estado de México, México.</span></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">Código Postal: '.$codigo_postal.', RFC: '.$rfc.'</span></td>
+  </tr>
+  <tr>
+    <td align="center" class="font-grande">Caja</td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">Comprobante de Pago: <b>'.$ticket_id.'</b></span></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">Le Atendió: '.$operador.'</span></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">Fecha: '.$fecha.'</span></td>
+  </tr>
+  <tr>
+    <td align="center" class="font-details-min">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Información del Vehículo</td>
+  </tr>
+  <tr>
+    <td><hr style="color:#333;"></td>
+  </tr>
+  <tr>
+    <td align="center" class="font-grande">'.$placas.'</td>
+  </tr>
+  <tr>
+    <td><span class="font-pequeña">Marca: '.$marca.'</span></td>
+  </tr>
+  <tr>
+    <td><span class="font-pequeña">Modelo: '.$modelo.'</span></td>
+  </tr>
+  <tr>
+    <td><span class="font-pequeña">Engomado: '.$engomado.'</span></td>
+  </tr>
+  <tr>
+    <td><span class="font-pequeña">Propietario: '.$nombre.'</span></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Información de Pago</td>
+  </tr>
+  <tr>
+    <td><hr style="color:#333;"></td>
+  </tr>
+  <tr>
+    <td align="center">'.$tipo_calcomania.'</td>
+  </tr>
+  <tr>
+    <td><table width="280" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr class="font-details-min">
+        <td width="165" class="font-pequeña">Concepto</td>
+        <td width="115" class="font-pequeña">Costo</td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr style="color:#333;"></td>
+        </tr>
+      <tr>
+        <td><span class="font-pequeña">Verificación '.$tipo_calcomania.'</span></td>
+        <td width="115"><span class="font-pequeña">$'.$total.'.00 m.n.</span></td>
+        </tr>
+      <tr>
+        <td align="right"><span class="font-pequeña"><strong>Total:</strong></span></td>
+        <td width="115"><span class="font-pequeña"><strong>$'.$total.'.00 m.n.</strong></span></td>
+      </tr>
+      <tr>
+        <td colspan="2"><span class="font-pequeña">Forma de Pago: '.$forma_pago.'</span></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="font-pequeña">Número de Referencia: '.$referencia.'</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña"><br>
+    '.$leyenda.'</span></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="font-pequeña">Teléfono: '.$telefono.', Correo Electrónico: '.$mail.'</span></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

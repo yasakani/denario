@@ -1,0 +1,48 @@
+/* Denario CSS*/
+/*Generales*/
+body { margin: 0px 0px 0px 0px; padding: 0px; font-family:sans-serif; font-size:11px;}
+img { border:0;}
+/*Tipografias*/
+.login-title { font-size:16px; color:#4C4C4C;}
+.bottom-text { font-size:9px; color:#4C4C4C;}
+.font-stats-green {color: #38B51A; font-weight:bold; font-size:36px;}
+.font-stats-grey {color: #333333; font-weight:bold; font-size:32px;}
+.font-stats-grey-low {color: #999999; font-weight:bold; font-size:32px;}
+.font-tipo-blue {color: #017CC4; font-weight:bold; font-size:30px;}
+.font-title-secciones { font-size:14px;; color:#4C4C4C;}
+.font-title-secciones-red { font-size:14px;; color:#C00; font-weight:bolder;}
+.font-title-secciones-green { font-size:14px;; color:#38B51A; font-weight:bolder;}
+.font-title-secciones-blue { font-size:14px;; color:#017CC4; font-weight:bolder}
+.font-title-money { font-size:14px;; color:#38B51A; font-weight:bold;}
+.font-descri-secciones { font-size:10px;; color:#4C4C4C;}
+.font-title { font-size:18px;; color:#4C4C4C; font-weight:bold;}
+.font-details { font-size:14px;; color:#4C4C4C;}
+.font-details-red { font-size:14px;; color:#C00; font-weight:bolder;}
+.font-details-blue { font-size:14px;; color:#017CC4; font-weight:bolder;}
+.font-details-green { font-size:14px;; color:#38B51A; font-weight:bolder;}
+.font-details-min { font-size:11px;; color:#4C4C4C;}
+.font-details-min-blue { font-size:11px;; color:#017CC4; font-weight:bold;}
+.font-details-min-red { font-size:11px;; color:#C00; font-weight:bold;}
+.font-details-min-green { font-size:11px;; color:#38B51A; font-weight:bold;}
+.font-little-blue {color: #017CC4; font-weight:bold; font-size:14px;}
+/*Hypervinculos*/
+.link{ font-size:11px; color:#017CC4;}
+.link:hover {font-size:11px; color:#000000;}
+.link-editar{ font-size:15px; color:#8BC061;}
+.link-editar:hover {font-size:15px; color:#333333;}
+/*Formulario*/
+.font-grande { font-family:sans-serif; font-size:18px; font-weight:bold;}
+.font-pequeña { font-family:sans-serif; font-size:11px;}
+.form-text { border: 1px #000000; background: url(../imagenes/form-text-field.png) no-repeat #ffffff; font-family: tahoma; font-size: 14px; height:36px; width:234px; color:#0180B7; padding-top:1px; padding-left:5px; padding-right:15px;}
+.form-text-costo { border: 1px #000000; text-align:center; background: url(../imagenes/form-text-field-moneda.png) no-repeat #ffffff; font-family: tahoma; font-size: 14px; height:36px; width:55px; color:#0180B7; padding-top:1px; padding-left:2px; padding-right:3px;}
+.form-text-medium { border: 1px #000000; background: url(../imagenes/form-text-field-medium.png) no-repeat #ffffff; font-family: tahoma; font-size: 14px; height:36px; width:90px; color:#0180B7; padding-top:1px; padding-left:2px; padding-right:3px;}
+.form-text-large { border: 1px #000000; background: url(../imagenes/form-text-field-large.png) no-repeat #ffffff; font-family: tahoma; font-size: 14px; height:36px; width:347px; color:#0180B7; padding-top:1px; padding-left:2px; padding-right:3px;}
+.form-list {font-family: tahoma; font-size: 14px; height:36px; color:#0180B7;}
+.form-button { border: 1px #000000; background: url(../imagenes/login-button-out.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:73px; cursor:pointer;}
+.form-button:hover { border: 1px #000000; background: url(../imagenes/login-button.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:73px; cursor:pointer;}
+.form-button-guardar { border: 1px #000000; background: url(../imagenes/guardar-boton-out.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
+.form-button-guardar:hover { border: 1px #000000; background: url(../imagenes/guardar_boton.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
+.form-button-actualizar { border: 1px #000000; background: url(../imagenes/actualizar-botton-out.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
+.form-button-actualizar:hover { border: 1px #000000; background: url(../imagenes/actualizar-botton.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
+.form-button-cobrar { border: 1px #000000; background: url(../imagenes/cobrar-botton-out.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
+.form-button-cobrar:hover { border: 1px #000000; background: url(../imagenes/cobrar-boton.png) no-repeat #ffffff; font-family: tahoma; height:44px; width:226px; cursor:pointer;}
